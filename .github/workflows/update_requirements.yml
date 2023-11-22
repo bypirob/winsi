@@ -1,4 +1,4 @@
-name: "pylint: linter"
+name: "update: requirements.txt"
 
 on: 
   push:
@@ -28,7 +28,7 @@ jobs:
         if git diff --quiet; then
           echo "No hay cambios."
         else
-          git add README.md
+          git add requirements.txt
           git commit -m "Update requirements.txt based this commit -> $(git rev-parse --short HEAD)"
           git push origin main
         fi

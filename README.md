@@ -8,18 +8,36 @@ It set the previous active windows. For example, you click on your browser, then
 
 ## Setup
 
-> You need to install Python in Windows. It must be installed outside WSL2.
+> **IMPORTANT** You need to install Python in Windows. It must be installed outside WSL2.
 
 In a terminal, run:
 
-```
+1. Clone project:
+```bash
 git clone git@github.com:bypirob/winsi.git
+```
+
+2. Move into folder:
+```bash
 cd winsi
-python3 -m pip install pywin32
+```
+3. Install dependencies:
+```bash
+pipenv install
+```
+
+- if you don't have pipenv:
+```bash
+pip install -r requirements. txt
+```
+
+# Usage
 
 click the window you want to resize, and come back to the terminal
 
-python3 winsi.py
+- In folder the project:
+```bash
+python3 main.py
 ```
 
 You can change the width/height using the variables that are ate the top of the script.
